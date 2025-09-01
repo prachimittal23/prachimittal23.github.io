@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: #067ded;
+  color: #350101;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: #350101;
   color: #fff;
 }
 
@@ -213,6 +213,54 @@ h6 {
 .nav-menu li:hover>a span {
   display: block;
 }
+
+
+
+
+/* ===== Dark Mode for Nav Menu ===== */
+body.dark-mode .nav-menu a,
+body.dark-mode .nav-menu a:focus {
+  color: #ffffff !important;
+  background: #1e1e1e !important;
+}
+
+body.dark-mode .nav-menu a i,
+body.dark-mode .nav-menu a:focus i {
+  color: #ffffff !important;
+}
+
+body.dark-mode .nav-menu a span,
+body.dark-mode .nav-menu a:focus span {
+  color: #ffffff !important;
+}
+
+body.dark-mode .nav-menu a:hover,
+body.dark-mode .nav-menu .active,
+body.dark-mode .nav-menu .active:focus,
+body.dark-mode .nav-menu li:hover>a {
+  background: #333333 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .nav-menu a:hover span,
+body.dark-mode .nav-menu .active span,
+body.dark-mode .nav-menu .active:focus span,
+body.dark-mode .nav-menu li:hover>a span {
+  color: #ffffff !important;
+}
+
+/* Smooth transition */
+.nav-menu a,
+.nav-menu a span,
+.nav-menu a i {
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+
+
+
+
+
 
 .mobile-nav-toggle {
   position: fixed;
@@ -670,7 +718,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #148af9;
+  color: #350101;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -824,7 +872,7 @@ section {
 }
 
 .services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+  fill: #350101;
 }
 
 .services .iconbox-orange i {
@@ -1089,7 +1137,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #0678e3;
+  background: #350101;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1218,16 +1266,16 @@ section {
 }
 
 .pdfbutton:hover {
-  background-color: #5468ff; 
+  background-color: #350101; 
 }
 
 
 .portfolioprojectbutton:hover {
-  background-color: #5468ff; 
+  background-color: #350101; 
 }
 
 .collapsible:hover {
-  background-color: #5468ff; 
+  background-color: #350101; 
 }
 
 .custom-container {
@@ -1440,7 +1488,8 @@ body.dark-mode .nav-menu,
 body.dark-mode .section-title h2,
 body.dark-mode .content,
 body.dark-mode .about,
-body.dark-mode header {
+body.dark-mode header,
+body.dark-mode .skills {
   background-color: #1e1e1e !important;
   color: #e0e0e0 !important;
 }
@@ -1458,7 +1507,6 @@ body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
-body.dark-mode h5,
 body.dark-mode h6,
 body.dark-mode span,
 body.dark-mode li,
@@ -1472,5 +1520,169 @@ body.dark-mode .heroheader,
 body.dark-mode .content {
   color: #ffffff !important;
 }
+
+body.dark-mode h5
+{
+  color: #000000 !important;
+}
+
+
+
+/* ===== Dark Mode: Contact Section Styling ===== */
+body.dark-mode .info,
+body.dark-mode .php-email-form {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+body.dark-mode .info h4,
+body.dark-mode .info p,
+body.dark-mode .php-email-form label,
+body.dark-mode .php-email-form .loading,
+body.dark-mode .php-email-form .sent-message,
+body.dark-mode .php-email-form .error-message {
+  color: #ffffff !important;
+}
+
+/* Icons inside info boxes */
+body.dark-mode .info i {
+  color: #ffffff !important;
+}
+
+/* Input and textarea fields in dark mode */
+body.dark-mode .php-email-form input,
+body.dark-mode .php-email-form textarea {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555;
+}
+
+/* Placeholder text color (optional) */
+body.dark-mode .php-email-form input::placeholder,
+body.dark-mode .php-email-form textarea::placeholder {
+  color: #cccccc !important;
+}
+
+/* Submit button styling in dark mode */
+body.dark-mode .php-email-form button[type="submit"] {
+  background-color: #930000;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .php-email-form button[type="submit"]:hover {
+  background-color: #b30000;
+}
+
+/* ===== Dark Mode: Footer Styling ===== */
+body.dark-mode #footer {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  padding: 40px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode #footer h3,
+body.dark-mode #footer .copyright {
+  color: #ffffff !important;
+}
+
+/* Social media icons */
+body.dark-mode #footer .social-links a {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode #footer .social-links a:hover {
+  color: #930000 !important;
+}
+
+/* ===== Dark Mode: Skills Section ===== */
+body.dark-mode .skills-section {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .skills-section .section-title h2 {
+  color: #ffffff;
+}
+
+/* Card Front & Back */
+body.dark-mode .skill-card .card-front,
+body.dark-mode .skill-card .card-back {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Skill icons */
+body.dark-mode .skill-card .card-front i {
+  color: #ffffff;
+}
+
+/* Skill list items */
+body.dark-mode .skill-card .card-back ul li {
+  color: #ffffff;
+}
+
+/* Default Light Mode */
+.custom-border {
+  border: 3px solid #5D3FD3;
+  border-radius: 15px;
+}
+
+/* Dark Mode override */
+body.dark-mode .custom-border {
+  border: 3px solid #BB86FC; /* Light purple or any contrast color */
+}
+
+/* Light Mode (Default) */
+#portfolio-flters {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #fff; /* Light background */
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+#portfolio-flters li {
+  cursor: pointer;
+  margin-top: 10px;
+  color: #000;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+#portfolio-flters .filter-active {
+  background-color: #5D3FD3;
+  color: #fff;
+}
+
+/* DARK MODE: Portfolio Filter Fix */
+body.dark-mode #portfolio-flters {
+  background-color: #222; /* Dark background */
+}
+
+body.dark-mode #portfolio-flters li {
+  background-color: #333; /* Darker buttons */
+  color: #eee;            /* Light text */
+}
+
+body.dark-mode #portfolio-flters .filter-active {
+  background-color: #BB86FC; /* Highlight color */
+  color: #000;               /* Dark text on highlight */
+}
+
 
 
