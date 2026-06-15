@@ -64,7 +64,8 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
+    let navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 68
+    let elementPos = select(el).offsetTop - navH
     window.scrollTo({
       top: elementPos,
       behavior: 'smooth'

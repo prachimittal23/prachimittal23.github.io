@@ -7,7 +7,7 @@
   <title>Prachi Mittal</title>
   <link href="assets/img/companyicons/pm_logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -20,39 +20,51 @@
 </head>
 
 <body>
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button>
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
+  <header id="header">
+    <span class="nav-brand">Prachi Mittal</span>
+
+    <nav id="navbar">
+      <ul class="nav-menu">
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills & Certifications</span></a></li>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav>
 
-    <!-- Dark/Light Mode Toggle Button -->
-    <div class="theme-toggle">
-      <button id="theme-toggle-btn" class="btn btn-light">
-        <i class="fas fa-moon" style="icon"></i>
+    <div class="nav-controls">
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open menu">
+        <i class="bi bi-list"></i>
       </button>
     </div>
-
   </header>
 
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="heroheader">Prachi Mittal</h1><br>
-      <p>I'm <span class="typed" data-typed-items="a Backend Engineer, a Cloud-Native Developer, a Distributed Systems Engineer, building scalable systems, open to Software Engineering opportunities">
-</span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/mittal-prachi1/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/prachimittal23" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.instagram.com/prachi100mittal" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="/assets/resume/Prachi_Resume.pdf" class="resume"><i class="far fa-file-pdf"></i></a>
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-8" data-aos="fade-right" data-aos-delay="100">
+          <p class="hero-eyebrow">Backend · Cloud · Distributed Systems</p>
+          <h1 class="heroheader">Prachi Mittal</h1>
+          <p>I'm <span class="typed" data-typed-items="a Backend Engineer, a Cloud-Native Developer, a Distributed Systems Engineer, building scalable systems, open to Software Engineering opportunities"></span></p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/mittal-prachi1/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/prachimittal23" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/prachi100mittal" class="instagram" title="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="/assets/resume/Prachi_Resume.pdf" class="resume" title="Download Resume"><i class="far fa-file-pdf"></i> Resume</a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 d-none d-md-flex justify-content-center align-items-end" data-aos="fade-left" data-aos-delay="200">
+          <div class="hero-img-wrap">
+            <img src="assets/img/newbackground.png" alt="Prachi Mittal" class="hero-img">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -64,37 +76,29 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p style="text-align: left;">Software Engineer with 3.5+ years of experience building scalable backend systems, distributed applications, and cloud-native platforms across enterprise infrastructure and financial services environments.
+          <p>Software Engineer with 3.5+ years of experience building scalable backend systems, distributed applications, and cloud-native platforms across enterprise infrastructure and financial services environments.
 
 Currently working at American Tire Distributors, I design backend services, Kubernetes-based microservices, and asynchronous processing workflows that improve scalability and operational efficiency.
 </p>
         </div>
 
-        <div class="row">
+        <div class="row g-4 align-items-start">
           <div class="col-lg-4">
-            <img src="assets/img/firstimgp.png" class="img-fluid" alt="">
+            <div class="about-img-wrap">
+              <img src="assets/img/firstimgp.png" class="img-fluid" alt="Prachi Mittal">
+            </div>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-
-            <p style="text-align: left;">
-              Previously, I worked across financial systems at Cognizant (Client: Credit Suisse Wealth Management), developing backend services and rule-engine driven workflows for large-scale client-product processing systems.
-
-My experience spans backend engineering, distributed systems, APIs, cloud-native applications, workflow automation, and scalable data processing using technologies such as Python, C#/.NET, AWS, Kubernetes, Docker, PostgreSQL, and microservices architectures.
-
-I enjoy solving problems involving scalability, automation, and system reliability while building products that create measurable operational impact.
-            </p><br>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>  
-                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Charlotte, NC (Open to Relocation)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+1(214)869-0711">+1 (214) 869-0711</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Mail:</strong> <span><a href="mailto:pmitta21@asu.edu">pmitta21@asu.edu</a></span></li>
-                </ul>
-              </div>
-            </div><br>
-            <p style="text-align: left;">
-              I am always on the lookout for roles that challenge and inspire me. I bring not only technical prowess but also a passion for cloud services, development, software quality assurance, and project management. If you are seeking a dedicated and skilled professional to contribute to exciting projects, let's connect and explore the possibilities together.
-            </p>
+          <div class="col-lg-8">
+            <div class="content-card content">
+              <p>Previously, I worked across financial systems at Cognizant (Client: Credit Suisse Wealth Management), developing backend services and rule-engine driven workflows for large-scale client-product processing systems.</p>
+              <p>My experience spans backend engineering, distributed systems, APIs, cloud-native applications, workflow automation, and scalable data processing using technologies such as Python, C#/.NET, AWS, Kubernetes, Docker, PostgreSQL, and microservices architectures.</p>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Charlotte, NC (Open to Relocation)</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+12148690711">+1 (214) 869-0711</a></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Mail:</strong> <span><a href="mailto:pmitta21@asu.edu">pmitta21@asu.edu</a></span></li>
+              </ul>
+              <p>I am always on the lookout for roles that challenge and inspire me. If you are seeking a dedicated and skilled professional to contribute to exciting projects, let's connect.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -111,6 +115,7 @@ I enjoy solving problems involving scalability, automation, and system reliabili
         <div class="row">
           <div class="col-lg-6">
             <h3 class="resume-title">Education</h3>
+            <div class="timeline">
             <div class="resume-item">
               <h4>Master of Science (M.S.) in Information Technology</h4>
               <h5>August 2023 - May 2025</h5>
@@ -191,189 +196,88 @@ I enjoy solving problems involving scalability, automation, and system reliabili
                 <li>Enterprise Architecture using C#(.net)</li>
                 <li>Cryptography and Network Security</li>
               </ul>
-              </div>                
+              </div>
             </div>
+            </div><!-- end .timeline -->
           </div>
 
           <div class="col-lg-6">
 
             <h3 class="resume-title">Professional Experience</h3>
+            <div class="timeline">
 
             <!-- ATD -->
-
             <div class="resume-item">
-              <a href="#">
-                <img src="/assets/img/companyicons/atd_logo.png" alt="ATD Logo" style="width:180px; height:auto;">
-              </a>
-
-              <hr style="margin-top:10px; border-top:3px solid #5D3FD3;">
-
-              <h4 style="margin-top:5px;">Cloud & Backend Engineer — American Tire Distributors</h4>
-
+              <img src="/assets/img/companyicons/atd_logo.png" alt="ATD Logo">
+              <h4>Cloud &amp; Backend Engineer — American Tire Distributors</h4>
               <h5>Nov 2025 - Present</h5>
-
               <p><em>Charlotte, NC (Remote)</em></p>
-
-              <button class="collapsible">
-                Responsibilities <span class="arrow-down"></span>
-              </button>
-
-              <div class="content" style="display:none; margin-top:10px;">
+              <button class="collapsible">Responsibilities <span class="arrow-down"></span></button>
+              <div class="content" style="display:none;">
                 <ul>
-
-                  <li>
-                    Designed and built Kubernetes-based microservices and asynchronous workflows for document processing, reducing processing time by over 95% (45 min → &lt;1 min).
-                  </li>
-
-                  <li>
-                    Developed backend services using Python and PostgreSQL replacing a $230K/year third-party system, improving scalability and operational efficiency.
-                  </li>
-
-                  <li>
-                    Built REST APIs and backend pipelines while troubleshooting concurrency issues and race conditions, improving throughput by ~30%.
-                  </li>
-
-                  <li>
-                    Automated operational workflows and backend processing systems, reducing manual intervention across distributed services.
-                  </li>
-
+                  <li>Designed and built Kubernetes-based microservices and asynchronous workflows for document processing, reducing processing time by over 95% (45 min → &lt;1 min).</li>
+                  <li>Developed backend services using Python and PostgreSQL replacing a $230K/year third-party system, improving scalability and operational efficiency.</li>
+                  <li>Built REST APIs and backend pipelines while troubleshooting concurrency issues and race conditions, improving throughput by ~30%.</li>
+                  <li>Automated operational workflows and backend processing systems, reducing manual intervention across distributed services.</li>
                 </ul>
               </div>
             </div>
-
 
             <!-- MINDSPARK -->
-
             <div class="resume-item">
-
-              <a href="#">
-                <img src="/assets/img/companyicons/mindsparked_logo.png" alt="MindSpark Logo" style="width:100px; height:auto;">
-              </a>
-
-              <hr style="margin-top:10px; border-top:3px solid #5D3FD3;">
-
-              <h4 style="margin-top:5px;">Cloud Engineer — MindSpark</h4>
-
+              <img src="/assets/img/companyicons/mindsparked_logo.png" alt="MindSpark Logo">
+              <h4>Cloud Engineer — MindSpark</h4>
               <h5>Jun 2025 - Nov 2025</h5>
-
               <p><em>Tempe, AZ</em></p>
-
-              <button class="collapsible">
-                Responsibilities <span class="arrow-down"></span>
-              </button>
-
-              <div class="content" style="display:none; margin-top:10px;">
+              <button class="collapsible">Responsibilities <span class="arrow-down"></span></button>
+              <div class="content" style="display:none;">
                 <ul>
-
-                  <li>
-                    Designed and implemented serverless data processing pipelines using AWS Lambda and Step Functions, orchestrating workflows processing 10K+ daily events.
-                  </li>
-
-                  <li>
-                    Developed distributed backend logic for asynchronous processing and data transformation across cloud-native services.
-                  </li>
-
-                  <li>
-                    Built CI/CD automation workflows improving deployment reliability and reducing release overhead.
-                  </li>
-
-                  <li>
-                    Collaborated across backend and cloud teams to improve scalability, fault tolerance, and service reliability.
-                  </li>
-
+                  <li>Designed and implemented serverless data processing pipelines using AWS Lambda and Step Functions, orchestrating workflows processing 10K+ daily events.</li>
+                  <li>Developed distributed backend logic for asynchronous processing and data transformation across cloud-native services.</li>
+                  <li>Built CI/CD automation workflows improving deployment reliability and reducing release overhead.</li>
+                  <li>Collaborated across backend and cloud teams to improve scalability, fault tolerance, and service reliability.</li>
                 </ul>
               </div>
             </div>
-
 
             <!-- ASU -->
-
             <div class="resume-item">
-
-              <a href="https://www.asu.edu/">
-                <img src="/assets/img/companyicons/asu_logo.png" alt="Arizona State University Logo" style="width:180px; height:auto;">
-              </a>
-
-              <hr style="margin-top:10px; border-top:3px solid #5D3FD3;">
-
-              <h4 style="margin-top:5px;">
-                Teaching Assistant — Arizona State University
-              </h4>
-
+              <img src="/assets/img/companyicons/asu_logo.png" alt="Arizona State University Logo">
+              <h4>Teaching Assistant — Arizona State University</h4>
               <h5>Aug 2024 - May 2025</h5>
-
               <p><em>Tempe, AZ</em></p>
-
-              <button class="collapsible">
-                Responsibilities <span class="arrow-down"></span>
-              </button>
-
-              <div class="content" style="display:none; margin-top:10px;">
+              <button class="collapsible">Responsibilities <span class="arrow-down"></span></button>
+              <div class="content" style="display:none;">
                 <ul>
-
-                  <li>
-                    Mentored 250+ students across Cyber Risk Management and Business Data Visualization courses, strengthening analytical thinking and technical problem-solving skills.
-                  </li>
-
-                  <li>
-                    Guided students in Power BI, Tableau, risk modeling frameworks, and structured approaches to debugging and data analysis.
-                  </li>
-
+                  <li>Mentored 250+ students across Cyber Risk Management and Business Data Visualization courses, strengthening analytical thinking and technical problem-solving skills.</li>
+                  <li>Guided students in Power BI, Tableau, risk modeling frameworks, and structured approaches to debugging and data analysis.</li>
                 </ul>
               </div>
             </div>
-
 
             <!-- COGNIZANT -->
-
             <div class="resume-item">
-
-              <a href="https://www.cognizant.com/us/en">
-                <img src="/assets/img/companyicons/cognizant logo.jpg" alt="Cognizant Logo" style="width:250px; height:auto;">
-              </a>
-
-              <hr style="margin-top:10px; border-top:3px solid #5D3FD3;">
-
-              <h4 style="margin-top:5px;">
-                Software Engineer — Cognizant
-              </h4>
-
+              <img src="/assets/img/companyicons/cognizant logo.jpg" alt="Cognizant Logo">
+              <h4>Software Engineer — Cognizant</h4>
               <h5>Apr 2021 - Aug 2023</h5>
-
               <p><em>Pune, India</em></p>
-
-              <button class="collapsible">
-                Responsibilities <span class="arrow-down"></span>
-              </button>
-
-              <div class="content" style="display:none; margin-top:10px;">
+              <button class="collapsible">Responsibilities <span class="arrow-down"></span></button>
+              <div class="content" style="display:none;">
                 <ul>
-
-                  <li>
-                    Developed backend microservices and APIs using C#/.NET to process client and product data across enterprise financial systems, reducing workflow times from 1 hour to 15 minutes.
-                  </li>
-
-                  <li>
-                    Built rule-engine driven workflows to dynamically evaluate client eligibility across cross-border financial products and regulatory constraints.
-                  </li>
-
-                  <li>
-                    Developed taxonomy and mapping pipelines to normalize client-product datasets for downstream processing and business workflows.
-                  </li>
-
-                  <li>
-                    Introduced Python-based automation frameworks improving testing efficiency by over 50% while increasing release reliability.
-                  </li>
-
+                  <li>Developed backend microservices and APIs using C#/.NET to process client and product data across enterprise financial systems, reducing workflow times from 1 hour to 15 minutes.</li>
+                  <li>Built rule-engine driven workflows to dynamically evaluate client eligibility across cross-border financial products and regulatory constraints.</li>
+                  <li>Developed taxonomy and mapping pipelines to normalize client-product datasets for downstream processing and business workflows.</li>
+                  <li>Introduced Python-based automation frameworks improving testing efficiency by over 50% while increasing release reliability.</li>
                 </ul>
               </div>
             </div>
-          
-        </div>
-      </div>
-      
+            </div><!-- end .timeline -->
+          </div><!-- end col-lg-6 experience -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+
     </section>
-    <button class="pdfbutton" onclick="window.location.href='/assets/resume/Prachi_Resume.pdf'">Get PDF version of my Resume</button>
+    <button class="pdfbutton" onclick="window.location.href='/assets/resume/Prachi_Resume.pdf'"><i class="far fa-file-pdf"></i> Download PDF Resume</button>
     <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -847,22 +751,35 @@ I enjoy solving problems involving scalability, automation, and system reliabili
     });
   </script>
 
-  <!-- Script to change the background -->
   <script>
-    const toggleBtn = document.getElementById('theme-toggle-btn');
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    (function() {
+      var saved = localStorage.getItem('theme');
+      // Default: dark mode unless user explicitly chose light
+      if (saved === 'light') {
+        document.body.classList.add('light-mode');
+      }
+      // dark is the default — no class needed (CSS vars set on :root)
+    })();
 
-    // Load saved theme or default
-    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDark)) {
-      document.body.classList.add('dark-mode');
-      toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+    var toggleBtn = document.getElementById('theme-toggle-btn');
+
+    function syncIcon() {
+      var isLight = document.body.classList.contains('light-mode');
+      toggleBtn.innerHTML = isLight ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
     }
+    syncIcon();
 
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      toggleBtn.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    toggleBtn.addEventListener('click', function() {
+      document.body.classList.toggle('light-mode');
+      var isLight = document.body.classList.contains('light-mode');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      syncIcon();
+    });
+
+    // header scroll shadow
+    window.addEventListener('scroll', function() {
+      var header = document.getElementById('header');
+      header.classList.toggle('scrolled', window.scrollY > 20);
     });
   </script>
 
